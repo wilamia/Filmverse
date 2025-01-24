@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".Activities.AccountActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/oval_btn_background"
+            android:padding="8dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Профиль"
+            android:textColor="@color/green"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/profileImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/rounded_corners"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Почта"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Имя пользователя"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_online"
+                android:drawablePadding="5dp"
+                android:drawingCacheQuality="high"
+                android:fontFamily="@font/nunito_light"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="online" />
+
+            <!-- Прогресс-бар добавлен здесь -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/nunito_medium"
+            android:text="Избранное"
+            android:textColor="#ABFFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/nunito_medium"
+            android:text="История просмотра"
+            android:textColor="#ABFFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/settingsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/nunito_medium"
+            android:text="Настройки аккаунта"
+            android:textColor="#ABFFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/logOutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="#CB890000"
+            android:fontFamily="@font/nunito_medium"
+            android:text="Выйти"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

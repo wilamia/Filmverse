@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_years"
+        android:title="Годы"
+        android:checkable="true" />
+
+    <item 
+        android:id="@+id/nav_genre"
+        android:title="Жанры"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/nav_country"
+        android:title="Страны"
+        android:checkable="true" />
+</menu>

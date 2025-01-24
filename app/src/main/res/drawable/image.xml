@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/ic_online"
+            android:gravity="center"
+            android:width="10dp"
+        android:height="10dp"
+        />
+    </item>
+</layer-list>
